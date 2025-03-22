@@ -1,5 +1,5 @@
 import React from 'react';
-import { formatDate } from '../../utils/dateFormatter';
+import { formatTanggal } from '../../utils/formatTanggal';
 import './Post.css';
 
 function Post({ post, onDelete, onEdit, onLike }) {
@@ -8,7 +8,7 @@ function Post({ post, onDelete, onEdit, onLike }) {
       <div className="post-header">
         <span className="post-author">Pengguna</span>
         <span className="post-time">
-          {formatDate(post.createdAt)}
+          {formatTanggal(post.createdAt)}
           {post.edited && ' · diubah'}
         </span>
       </div>

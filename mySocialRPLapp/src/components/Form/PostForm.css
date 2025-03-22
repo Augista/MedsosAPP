@@ -1,0 +1,163 @@
+.post-form {
+    background-color: white;
+    border-radius: 15px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .post-input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #e1e8ed;
+    border-radius: 8px;
+    resize: none;
+    margin-bottom: 10px;
+    font-size: 16px;
+    height: 100px;
+  }
+  
+  .post-input:focus {
+    outline: none;
+    border-color: #1da1f2;
+  }
+  
+  .post-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .character-count {
+    color: #657786;
+    font-size: 14px;
+  }
+  
+  .button-group {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .post-button {
+    background-color: #1da1f2;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s;
+  }
+  
+  .post-button:hover {
+    background-color: #0d8ecf;
+  }
+  
+  .post-button:disabled {
+    background-color: #9ad0f5;
+    cursor: not-allowed;
+  }
+  
+  .cancel-button {
+    background-color: #657786;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s;
+  }
+  
+  .cancel-button:hover {
+    background-color: #556677;
+  }
+
+  .mobile-post-form-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--twitter-white);
+    z-index: 2000;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .mobile-post-form {
+    padding: 0 16px 16px;
+    border-bottom: none;
+    flex-grow: 1;
+    flex-direction: column;
+  }
+  
+  .mobile-form-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 16px;
+    border-bottom: 1px solid var(--twitter-extra-light-gray);
+    position: sticky;
+    top: 0;
+    background-color: var(--twitter-white);
+    z-index: 10;
+    width: 100%;
+  }
+  
+  .back-button {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: var(--twitter-black);
+    padding: 8px;
+  }
+  
+  .mobile-submit {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+  
+  .mobile-post-form .post-form-container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+  
+  .mobile-post-form .post-textarea {
+    flex-grow: 1;
+    min-height: 150px;
+  }
+  
+  @media (max-width: 688px) {
+    .post {
+      padding: 12px;
+    }
+    
+    .post-form {
+      padding: 10px;
+    }
+    
+    .post-form-icons {
+      gap: 8px;
+    }
+    
+    .icon-button {
+      font-size: 18px;
+    }
+    
+    .post-button {
+      padding: 6px 16px;
+      font-size: 14px;
+    }
+    
+    .post-action {
+      font-size: 12px;
+    }
+    
+    .post-action button {
+      padding: 6px;
+    }
+  }

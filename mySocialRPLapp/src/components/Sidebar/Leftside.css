@@ -1,0 +1,153 @@
+.left-sidebar {
+    width: 275px;
+    height: 100%;
+    padding: 0 12px;
+    position: sticky;
+    top: 0;
+  }
+  
+  .logo-container {
+    border-bottom: 1px solid #efefef;
+  }
+  
+  .logo-container img {
+    max-width: 100px;
+    margin-left: 80px;
+    margin-top: 20px;
+    height: auto;
+  }
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    margin-top: 8px;
+  }
+  
+  .nav-link {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    transition: background-color 0.2s;
+  }
+  
+  .nav-link:hover {
+    background-color: rgba(29, 161, 242, 0.1);
+  }
+  
+  .nav-link.active {
+    font-weight: 700;
+    color: #1da1f2;
+  }
+  
+  .nav-link-icon {
+    margin-right: 20px;
+    font-size: 20px;
+  }
+  
+  .tweet-btn {
+    margin-top: 16px;
+    background-color: #1da1f2;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 12px 0;
+    font-weight: 700;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .tweet-btn:hover {
+    background-color: #1a91da;
+  }
+  
+  .tweet-btn-icon {
+    display: none;
+  }
+  
+  @media (max-width: 1200px) {
+    .left-sidebar {
+      width: 88px;
+    }
+    
+    .nav-link-text {
+      display: none;
+    }
+    
+    .nav-link-icon {
+      margin-right: 0;
+    }
+    
+    .nav-link {
+      justify-content: center;
+    }
+    
+    .tweet-btn-text {
+      display: none;
+    }
+    
+    .tweet-btn-icon {
+      display: inline;
+    }
+  }
+  
+  @media (max-width: 688px) {
+    .left-sidebar {
+      display: none;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .app-container {
+      flex-direction: column;
+    }
+    
+    .left-sidebar {
+      width: 100%;
+      height: auto;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      top: auto;
+      z-index: 100;
+      padding: 0;
+      border-top: 1px solid #dbdbdb;
+      border-right: none;
+    }
+    
+    .logo-container {
+      display: none;
+    }
+    
+    .nav-links {
+      flex-direction: row;
+      justify-content: space-around;
+      margin: 0;
+    }
+    
+    .nav-link {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border-radius: 0;
+      padding: 8px 0;
+      flex: 1;
+    }
+    
+    .nav-link-icon {
+      margin-right: 0;
+      margin-bottom: 3px;
+    }
+    
+    .nav-link-text {
+      display: none;
+    }
+    
+    .tweet-btn {
+      display: none;
+    }  
+}

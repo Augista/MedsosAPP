@@ -1,0 +1,23 @@
+.notifications-container {
+    padding: 16px;
+  }
+  
+  .notification-item {
+    display: flex;
+    padding: 16px;
+    border-bottom: 1px solid #e1e8ed;
+  }
+  
+  .notification-icon {
+    font-size: 24px;
+    margin-right: 15px;
+  }
+  
+  .notification-content {
+    flex: 1;
+  }
+  
+  .notification-time {
+    color: #657786;
+    font-size: 14px;
+  }

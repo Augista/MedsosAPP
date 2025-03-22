@@ -1,0 +1,12 @@
+.posts-container {
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+  
+  .empty-state {
+    text-align: center;
+    padding: 30px;
+    color: #657786;
+  }

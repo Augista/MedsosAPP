@@ -1,0 +1,182 @@
+
+@media (max-width: 688px) {
+    .twitter-layout {
+      grid-template-columns: 1fr;
+    }
+    
+    .main-content {
+      width: 100%;
+      padding-bottom: 60px;
+      margin-top: 0;
+    }
+    
+    .left-sidebar.mobile-nav {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      top: auto;
+      height: 60px;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      padding: 0;
+      background-color: var(--twitter-white);
+      border-top: 1px solid var(--twitter-extra-light-gray);
+      z-index: 1000;
+      overflow: visible;
+    }
+    
+    .mobile-nav .nav-links {
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+      height: 100%;
+    }
+    
+    .mobile-nav .nav-link {
+      padding: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      border-radius: 0;
+      flex: 1;
+    }
+    
+    .mobile-nav .nav-link-icon {
+      margin-right: 0;
+      font-size: 20px;
+    }
+    
+    .mobile-nav .nav-link-text {
+      display: none;
+    }
+    
+    
+    .left-sidebar:not(.mobile-nav) {
+      display: none;
+    }
+    
+    .mobile-sidebar-button {
+      display: block;
+      position: fixed;
+      left: 15px;
+      top: 15px;
+      z-index: 1050;
+      background: none;
+      border: none;
+      color: var(--twitter-black);
+      font-size: 20px;
+      cursor: pointer;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .mobile-sidebar-button:hover {
+      background-color: rgba(29, 161, 242, 0.1);
+    }
+    
+    .mobile-sidebar {
+      position: fixed;
+      top: 0;
+      left: -280px;
+      width: 280px;
+      height: 100vh;
+      background-color: var(--twitter-white);
+      z-index: 1100;
+      transition: left 0.3s ease;
+      padding: 20px;
+      box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+      overflow-y: auto;
+    }
+    
+    .mobile-sidebar.open {
+      left: 0;
+    }
+    
+    .mobile-sidebar-close {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: none;
+      border: none;
+      font-size: 20px;
+      cursor: pointer;
+      color: var(--twitter-black);
+    }
+    
+    .mobile-sidebar .logo-container {
+      display: flex;
+      margin-bottom: 20px;
+    }
+    
+    .mobile-sidebar .nav-links {
+      flex-direction: column;
+    }
+    
+    .mobile-sidebar .nav-link {
+      flex-direction: row;
+      justify-content: flex-start;
+      padding: 15px;
+    }
+    
+    .mobile-sidebar .nav-link-icon {
+      margin-right: 15px;
+    }
+    
+    .mobile-sidebar .nav-link-text {
+      display: block;
+      font-size: 18px;
+    }
+    
+    .mobile-sidebar .tweet-btn {
+      display: block;
+      width: 100%;
+      margin-top: 20px;
+      text-align: center;
+    }
+    
+    .mobile-sidebar-overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 1090;
+    }
+    
+    .mobile-sidebar-overlay.open {
+      display: block;
+    }
+    
+    .header {
+      padding-left: 60px;
+    }
+    
+    .mobile-tweet-btn {
+      display: flex;
+      position: fixed;
+      right: 20px;
+      bottom: 80px;
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      background-color: var(--twitter-blue);
+      color: white;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      z-index: 1001;
+      font-size: 24px;
+      border: none;
+      cursor: pointer;
+    }
+  }
